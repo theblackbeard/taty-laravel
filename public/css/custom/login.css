@@ -1,0 +1,22 @@
+@media(max-width: 768px){
+	#login{
+		margin-top: 15%;
+		background: rgba(0,0,0,.5);
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+ 		border-radius:7px;
+ 		padding: 20px;
+
+	}
+}
+
+@media(min-width: 768px){
+	#login{
+		margin-top: 80px;
+		background: rgba(0,0,0,.5);
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+ 		border-radius:7px;
+ 		padding: 20px;
+	}
+}

@@ -30,21 +30,10 @@ Route::get('admin', function(){
      return 'Hello World';
 });
 
-Route::get('admin/menus', function(){
-      return 'Hello Menus Index';
-});
+Route::get('admin/menu', 'MenuController@index');
+Route::get('admin/category', 'CategoryController@index');
+Route::get('admin/article', 'ArticleController@index');
 
-Route::get('admin/categories', function(){
-     return 'Hello Categories Index';
-});
-
-Route::get('admin/articles', function(){
-     return 'Hello Articles Index';
-});
-
-Route::get('admin/users', function(){
-     return 'Hello Users Index';
-});
 
 /*
 |--------------------------------------------------------------------------

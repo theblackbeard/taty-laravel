@@ -1,0 +1,35 @@
+@media(max-width: 768px){
+	#photo_perfil{
+		margin: 15px 0px 5px 0px;
+	}
+
+	#perfil{margin-top: 20px;}
+	#perfil p{ 
+		font-size: 19px; 
+		text-align: justify; 
+		background: rgba(0,0,0,.4); 
+		padding: 20px;
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+ 		border-radius:7px;
+	}
+
+
+}
+
+@media(min-width: 768px){
+	#photo_perfil{
+		margin: 50px 0px 5px 0px;
+	}
+
+	#perfil{margin-top: 20px;}
+	#perfil p{ 
+		font-size: 21px; 
+		text-align: justify; 
+		background: rgba(0,0,0,.4); 
+		padding: 20px;
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+ 		border-radius:7px;
+	}
+}

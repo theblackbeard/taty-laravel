@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Italianno);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: url(../../img/padded.png) repeat top left;
+  font-family: 'Poiret One', cursive;
+  padding-top: 80px;
+  overflow: auto;
+  color: rgb(202,202,202);
+ 
+}
+
+
+/*Buttons*/
+
+
+/*
+a:link {
+    color: rgb(112,146,190);
+}
+
+a:visited {
+   color: rgb(63,96,139);
+}
+
+a:hover {
+   color: rgb(63,96,139);
+   text-decoration: none;
+
+}
+
+
+a:active {
+   color: rgb(63,96,139);
+}
+
+*/
+
+
+/*CONTEUDO*/
+#content {
+    border: 0px solid white;
+    padding: 0;
+    min-height:100%;
+    position:relative;
+
+}
+
+#content h1, h3.esquerda, h1.subtitle{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal normal 27px/1 'Poiret One', cursive;
+    color: rgba(210,201,191,1);
+    text-align: right;
+    text-transform: normal;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: nowrap;
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+}
+  
+#content h1 {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    padding-top: 30px;
+    border: 0px solid white;
+
+}
+  
+#content h1.subtitle{
+    margin-right: 5px; margin-top: 0px; margin-bottom: 0px;
+}
+
+#content h3.esquerda{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#content h2{
+    font-family: "Lucida Grande", Tahoma;
+    font-size: 8px;
+    font-weight: lighter;
+    font-variant: normal;
+    text-transform: uppercase;
+    color: #666666;
+    margin-top: 5px;
+    text-align: right!important;
+    letter-spacing: 0.3em;
+    padding-bottom: 30px;
+}
+
+
+
+.thumbnail{
+    border: 4px solid #BAADA2;
+    margin: 0;
+    background: rgba(0,0,0,0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    padding:0;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+  }
+
+
+.gallery{
+    padding: 10px;
+}
+
+
+
+/*RODAPE*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    clear: both;
+}
+
+footer h1{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 12px/1 Verdana, Geneva, sans-serif;
+    color: rgba(211,211,211,1);
+    text-align: center;
+    text-transform: normal;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67) ;
+}
+
+a.carv{
+   color: rgb(112,146,190);
+}
+
+/*MISC*/
+.borda {
+        border: 1px solid black;
+}
+
+.bloco{
+    width: 100%;
+    height: 40px;
+    clear: both;
+}
+
+
+/*Contact*/
+.form textarea   {
+    font-weight: bolder;
+    font-size: 18px;
+    color: #000;
+}
+
+.form input {
+    font-weight: bolder;
+    color: #000;
+    font-size: 18px;
+}
+
+.form select {
+    font-weight: bolder;
+    color: #000;
+    font-size: 18px;
+}
+
+.form input.file{
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.shadow-border{
+   -webkit-box-shadow: 5px 5px 20px -2px rgba(0,0,0,0.7);
+   -moz-box-shadow: 5px 5px 20px -2px rgba(0,0,0,0.7);
+    box-shadow: 5px 5px 20px -2px rgba(0,0,0,0.7);
+}

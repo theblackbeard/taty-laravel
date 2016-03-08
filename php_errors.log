@@ -1,0 +1,108 @@
+[08-Mar-2016 19:13:31 UTC] PHP Warning:  require(/home/ubuntu/workspace/taty-laravel/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/taty-laravel/bootstrap/autoload.php on line 17
+[08-Mar-2016 19:13:31 UTC] PHP Stack trace:
+[08-Mar-2016 19:13:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/taty-laravel/public/index.php:0
+[08-Mar-2016 19:13:31 UTC] PHP   2. require() /home/ubuntu/workspace/taty-laravel/public/index.php:22
+[08-Mar-2016 19:13:31 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/taty-laravel/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/taty-laravel/bootstrap/autoload.php on line 17
+[08-Mar-2016 19:13:31 UTC] PHP Stack trace:
+[08-Mar-2016 19:13:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/taty-laravel/public/index.php:0
+[08-Mar-2016 19:13:31 UTC] PHP   2. require() /home/ubuntu/workspace/taty-laravel/public/index.php:22
+[08-Mar-2016 19:15:33 UTC] PHP Warning:  require(/home/ubuntu/workspace/taty-laravel/bootstrap/../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/taty-laravel/bootstrap/autoload.php on line 17
+[08-Mar-2016 19:15:33 UTC] PHP Stack trace:
+[08-Mar-2016 19:15:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/taty-laravel/public/index.php:0
+[08-Mar-2016 19:15:33 UTC] PHP   2. require() /home/ubuntu/workspace/taty-laravel/public/index.php:22
+[08-Mar-2016 19:15:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/taty-laravel/bootstrap/../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/taty-laravel/bootstrap/autoload.php on line 17
+[08-Mar-2016 19:15:33 UTC] PHP Stack trace:
+[08-Mar-2016 19:15:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/taty-laravel/public/index.php:0
+[08-Mar-2016 19:15:33 UTC] PHP   2. require() /home/ubuntu/workspace/taty-laravel/public/index.php:22
+[08-Mar-2016 20:33:34 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/taty-laravel/storage/framework/views/e755f1a3fdd1d2676b2d41a41d25de95a6d6ffa2.php on line 31
+[08-Mar-2016 20:33:34 UTC] PHP Stack trace:
+[08-Mar-2016 20:33:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/taty-laravel/public/index.php:0
+[08-Mar-2016 20:33:34 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/taty-laravel/public/index.php:54
+[08-Mar-2016 20:33:34 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[08-Mar-2016 20:33:34 UTC] PHP   4. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:132
+[08-Mar-2016 20:33:34 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:34 UTC] PHP   6. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:34 UTC] PHP   7. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[08-Mar-2016 20:33:34 UTC] PHP   8. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[08-Mar-2016 20:33:34 UTC] PHP   9. call_user_func_array:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:124}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:124
+[08-Mar-2016 20:33:34 UTC] PHP  10. Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:124
+[08-Mar-2016 20:33:34 UTC] PHP  11. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php:44
+[08-Mar-2016 20:33:34 UTC] PHP  12. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:34 UTC] PHP  13. Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:34 UTC] PHP  14. Illuminate\Routing\Router->dispatch() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:246
+[08-Mar-2016 20:33:34 UTC] PHP  15. Illuminate\Routing\Router->dispatchToRoute() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:675
+[08-Mar-2016 20:33:34 UTC] PHP  16. Illuminate\Routing\Router->runRouteWithinStack() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:699
+[08-Mar-2016 20:33:34 UTC] PHP  17. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:726
+[08-Mar-2016 20:33:34 UTC] PHP  18. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:34 UTC] PHP  19. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:34 UTC] PHP  20. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:34 UTC] PHP  21. Illuminate\Routing\Router->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:34 UTC] PHP  22. Illuminate\Routing\Route->run() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:724
+[08-Mar-2016 20:33:34 UTC] PHP  23. Illuminate\Routing\Route->runController() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php:140
+[08-Mar-2016 20:33:34 UTC] PHP  24. Illuminate\Routing\ControllerDispatcher->dispatch() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php:174
+[08-Mar-2016 20:33:34 UTC] PHP  25. Illuminate\Routing\ControllerDispatcher->callWithinStack() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:54
+[08-Mar-2016 20:33:34 UTC] PHP  26. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:96
+[08-Mar-2016 20:33:34 UTC] PHP  27. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:34 UTC] PHP  28. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:34 UTC] PHP  29. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:34 UTC] PHP  30. Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:34 UTC] PHP  31. Illuminate\Routing\Router->prepareResponse() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:95
+[08-Mar-2016 20:33:34 UTC] PHP  32. Symfony\Component\HttpFoundation\Response->__construct() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1087
+[08-Mar-2016 20:33:34 UTC] PHP  33. Illuminate\Http\Response->setContent() /home/ubuntu/workspace/taty-laravel/vendor/symfony/http-foundation/Response.php:199
+[08-Mar-2016 20:33:34 UTC] PHP  34. Illuminate\View\View->render() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php:53
+[08-Mar-2016 20:33:34 UTC] PHP  35. Illuminate\View\View->renderContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:83
+[08-Mar-2016 20:33:34 UTC] PHP  36. Illuminate\View\View->getContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:118
+[08-Mar-2016 20:33:34 UTC] PHP  37. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:147
+[08-Mar-2016 20:33:34 UTC] PHP  38. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59
+[08-Mar-2016 20:33:34 UTC] PHP  39. include() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:42
+[08-Mar-2016 20:33:34 UTC] PHP  40. Illuminate\View\View->render() /home/ubuntu/workspace/taty-laravel/storage/framework/views/63dd05a777b11dd4681f5ede85e88fce1876ba31.php:17
+[08-Mar-2016 20:33:34 UTC] PHP  41. Illuminate\View\View->renderContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:83
+[08-Mar-2016 20:33:34 UTC] PHP  42. Illuminate\View\View->getContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:118
+[08-Mar-2016 20:33:34 UTC] PHP  43. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:147
+[08-Mar-2016 20:33:34 UTC] PHP  44. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59
+[08-Mar-2016 20:33:39 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/taty-laravel/storage/framework/views/e755f1a3fdd1d2676b2d41a41d25de95a6d6ffa2.php on line 31
+[08-Mar-2016 20:33:39 UTC] PHP Stack trace:
+[08-Mar-2016 20:33:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/taty-laravel/public/index.php:0
+[08-Mar-2016 20:33:39 UTC] PHP   2. Illuminate\Foundation\Http\Kernel->handle() /home/ubuntu/workspace/taty-laravel/public/index.php:54
+[08-Mar-2016 20:33:39 UTC] PHP   3. Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:99
+[08-Mar-2016 20:33:39 UTC] PHP   4. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:132
+[08-Mar-2016 20:33:39 UTC] PHP   5. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:39 UTC] PHP   6. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:39 UTC] PHP   7. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[08-Mar-2016 20:33:39 UTC] PHP   8. Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:32
+[08-Mar-2016 20:33:39 UTC] PHP   9. call_user_func_array:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:124}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:124
+[08-Mar-2016 20:33:39 UTC] PHP  10. Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:124
+[08-Mar-2016 20:33:39 UTC] PHP  11. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php:44
+[08-Mar-2016 20:33:39 UTC] PHP  12. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:39 UTC] PHP  13. Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:39 UTC] PHP  14. Illuminate\Routing\Router->dispatch() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:246
+[08-Mar-2016 20:33:39 UTC] PHP  15. Illuminate\Routing\Router->dispatchToRoute() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:675
+[08-Mar-2016 20:33:39 UTC] PHP  16. Illuminate\Routing\Router->runRouteWithinStack() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:699
+[08-Mar-2016 20:33:39 UTC] PHP  17. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:726
+[08-Mar-2016 20:33:39 UTC] PHP  18. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:39 UTC] PHP  19. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:39 UTC] PHP  20. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:39 UTC] PHP  21. Illuminate\Routing\Router->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:39 UTC] PHP  22. Illuminate\Routing\Route->run() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:724
+[08-Mar-2016 20:33:39 UTC] PHP  23. Illuminate\Routing\Route->runController() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php:140
+[08-Mar-2016 20:33:39 UTC] PHP  24. Illuminate\Routing\ControllerDispatcher->dispatch() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Route.php:174
+[08-Mar-2016 20:33:39 UTC] PHP  25. Illuminate\Routing\ControllerDispatcher->callWithinStack() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:54
+[08-Mar-2016 20:33:39 UTC] PHP  26. Illuminate\Pipeline\Pipeline->then() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:96
+[08-Mar-2016 20:33:39 UTC] PHP  27. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:39 UTC] PHP  28. Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:103
+[08-Mar-2016 20:33:39 UTC] PHP  29. call_user_func:{/home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:39 UTC] PHP  30. Illuminate\Routing\ControllerDispatcher->Illuminate\Routing\{closure}() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php:52
+[08-Mar-2016 20:33:39 UTC] PHP  31. Illuminate\Routing\Router->prepareResponse() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:95
+[08-Mar-2016 20:33:39 UTC] PHP  32. Symfony\Component\HttpFoundation\Response->__construct() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1087
+[08-Mar-2016 20:33:39 UTC] PHP  33. Illuminate\Http\Response->setContent() /home/ubuntu/workspace/taty-laravel/vendor/symfony/http-foundation/Response.php:199
+[08-Mar-2016 20:33:39 UTC] PHP  34. Illuminate\View\View->render() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/Http/Response.php:53
+[08-Mar-2016 20:33:39 UTC] PHP  35. Illuminate\View\View->renderContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:83
+[08-Mar-2016 20:33:39 UTC] PHP  36. Illuminate\View\View->getContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:118
+[08-Mar-2016 20:33:39 UTC] PHP  37. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:147
+[08-Mar-2016 20:33:39 UTC] PHP  38. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59
+[08-Mar-2016 20:33:39 UTC] PHP  39. include() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php:42
+[08-Mar-2016 20:33:39 UTC] PHP  40. Illuminate\View\View->render() /home/ubuntu/workspace/taty-laravel/storage/framework/views/63dd05a777b11dd4681f5ede85e88fce1876ba31.php:17
+[08-Mar-2016 20:33:39 UTC] PHP  41. Illuminate\View\View->renderContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:83
+[08-Mar-2016 20:33:39 UTC] PHP  42. Illuminate\View\View->getContents() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:118
+[08-Mar-2016 20:33:39 UTC] PHP  43. Illuminate\View\Engines\CompilerEngine->get() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/View.php:147
+[08-Mar-2016 20:33:39 UTC] PHP  44. Illuminate\View\Engines\PhpEngine->evaluatePath() /home/ubuntu/workspace/taty-laravel/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php:59

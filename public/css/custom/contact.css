@@ -1,0 +1,30 @@
+@media(max-width: 768px){
+	#contact{
+		border: 1px solid #000;
+	}
+
+	#form{
+		margin-top: 20px;
+		background: rgba(0,0,0,.5);
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+ 		border-radius:7px;
+ 		padding: 20px;
+	}
+
+}
+
+@media(min-width: 768px){
+	#contact{
+		margin-top: 30px;
+	}
+
+	#form{
+		margin-top: 20px;
+		background: rgba(0,0,0,.5);
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+ 		border-radius:7px;
+ 		padding: 20px;
+	}
+}
