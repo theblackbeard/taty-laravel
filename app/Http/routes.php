@@ -15,10 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('foo', function(){
-    return 'Hello World';
 
-});
 
 Route::get('user/{id}', function($id){
     return 'User' . $id;
@@ -30,9 +27,7 @@ Route::get('admin', function(){
      return 'Hello World';
 });
 
-Route::get('admin/menu', 'MenuController@index');
-Route::get('admin/category', 'CategoryController@index');
-Route::get('admin/article', 'ArticleController@index');
+
 
 
 /*
@@ -47,5 +42,34 @@ Route::get('admin/article', 'ArticleController@index');
 */
 
 Route::group(['middleware' => ['web']], function () {
-     return 'Hello Users Index';
+    Route::get('admin/menu', 'MenuController@index');
+    Route::get('admin/menu/new', 'MenuController@create');
+    Route::post('admin/menu', 'MenuController@store');
+    Route::get('admin/menu/{id}/edit', 'MenuController@edit');
+    Route::post('admin/menu/{id}/update', 'MenuController@update');
+    Route::get('admin/menu/{id}/destroy', 'MenuController@destroy');
+
+    Route::get('admin/category', 'CategoryController@index');
+    Route::get('admin/category/new', 'CategoryController@create');
+    Route::post('admin/category', 'CategoryController@store');
+    Route::get('admin/category/{id}/edit', 'CategoryController@edit');
+    Route::post('admin/category/{id}/update', 'CategoryController@update');
+    Route::get('admin/category/{id}/destroy', 'CategoryController@destroy');
+
+    Route::get('admin/article', 'ArticleController@index');
+    Route::get('admin/article/new', 'ArticleController@create');
+    Route::post('admin/article', 'ArticleController@store');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    //Route::auth();
+    Route::get('login', 'Auth\AuthController@showLoginForm');
+    Route::post('login', 'Auth\AuthController@login');
+    Route::get('logout', 'Auth\AuthController@logout');
+
+    Route::get('admin/user/register', 'Auth\AuthController@showRegistrationForm');
+    Route::post('register', 'Auth\AuthController@register');
+
+
+    Route::get('/home', 'HomeController@index');
 });

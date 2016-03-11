@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MenuRequest;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Menu;
+
 
 class MenuController extends Controller
 {
@@ -15,7 +17,8 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return view('admin.menu.index');
+        $menus = Menu::all();
+        return view('admin.menu.index', ['menus'=> $menus]);
     }
 
     /**
@@ -25,7 +28,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.menu.new');
     }
 
     /**
@@ -34,9 +37,15 @@ class MenuController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(MenuRequest $request)
     {
-        //
+        $data = $request->all();
+        if(!isset($data['active'])):
+            $data['active'] = '0';
+        endif;
+        $data['name'] = str_slug($data['title']);
+        Menu::create($data);
+        return redirect('admin/menu');
     }
 
     /**
@@ -58,7 +67,8 @@ class MenuController extends Controller
      */
     public function edit($id)
     {
-        //
+       $menu = Menu::find($id);
+       return view('admin/menu/edit', compact('menu'));
     }
 
     /**
@@ -68,9 +78,15 @@ class MenuController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(MenuRequest $request, $id)
     {
-        //
+        $data = $request->all();
+        if(!isset($data['active'])):
+            $data['active'] = '0';
+        endif;
+        $data['name'] = str_slug($data['title']);
+        Menu::find($id)->update($data);
+        return redirect('admin/menu');
     }
 
     /**
@@ -81,6 +97,7 @@ class MenuController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Menu::find($id)->delete();
+        return redirect('admin/menu');
     }
 }

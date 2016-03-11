@@ -8,7 +8,7 @@
      <div id="a_messages">
      
      </div>
-<a href="/admin/menus/new" class="btn btn-link a_link"><span class="glyphicon glyphicon-plus icon"></span>Criar Menu</a>
+<a href="/admin/article/new" class="btn btn-link a_link"><span class="glyphicon glyphicon-plus icon"></span>Criar Artigo</a>
 <div id="a_category">
     
 </div>
