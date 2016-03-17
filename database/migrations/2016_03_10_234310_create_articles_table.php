@@ -3,6 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class CreateArticlesTable extends Migration
 {
     /**
@@ -19,6 +20,7 @@ class CreateArticlesTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->string('title', 255);
             $table->string('name', 255);
+            $table->string('cover', 255)->nullable();
             $table->text('description')->nullable();
             $table->boolean('status');
             $table->integer('views');

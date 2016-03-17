@@ -1,14 +1,6 @@
 @extends('layouts.admin')
 @section('title', 'Editando Menu')
 @section('content')
-    <div id="content">
-        <h1>Editando Menu</h1>
-        <h2>by Tatiana</h2>
-    </div>
-    <div id="a_messages">
-        @include('admin.errors.errors')
-    </div>
-
     <div id="a_category">
         {!! Form::open(array('action' => array('MenuController@update', $menu->id, 'method' => 'put'))) !!}
         <div class="form-group">

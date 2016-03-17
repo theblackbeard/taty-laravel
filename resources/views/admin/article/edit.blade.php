@@ -1,50 +1,52 @@
 @extends('layouts.admin')
 @section('title', 'Editando Artigo')
 @section('content')
-    <div id="content">
-        <h1>Editando Artigo</h1>
-        <h2>by Tatiana</h2>
-    </div>
-    <div id="a_messages">
-        @include('admin.errors.errors')
-    </div>
-
     <div id="a_category">
-        {!! Form::open(array('action' => array('ArticleController@update', $article->id))) !!}
+        {!! Form::open(array('action' => array('ArticleController@update', $article->id, 'method' => 'put'),'files' => true)) !!}
         <div class="form-group">
             {{ Form::label('photo', 'Foto(s)') }}
-            {{ Form::file('photo[]',  array('multiple'=>true)) }}
+            {{ Form::file('cover') }}
         </div>
         <div class="form-group">
+
             {{ Form::label('menu', 'Menu') }}
-            {{ Form::select('menu', array('L' => 'Large', 'S' => 'Small'), null, ['class' => 'form-control','placeholder' => 'Escolha o Menu...']) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('category', 'Categoria') }}
-            {{ Form::select('category', array('L' => 'Large', 'S' => 'Small'), null, ['class' => 'form-control','placeholder' => 'Escolha a Categoria...']) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('title', 'Titulo') }}
-            {{ Form::text('title', null, array('class' => 'form-control')) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('description', 'Descrição') }}
-            {{ Form::textArea('description', null, ['class' => 'form-control']) }}
-        </div>
-        <div class="form-group">
-            {{ Form::label('tags', 'Tags') }}
-            {{ Form::select('tags[]', $article->taglist(), null, ['class' => 'form-control','multiple'])}}
+            {{ Form::select('menu_id', $menus, $article->menuList($article->menu_id), ['class' => 'form-control','placeholder' => 'Escolha o Menu...']) }}
         </div>
 
         <div class="form-group">
-            {{ Form::label('ativo', 'Ativo') }}
-            {{ Form::checkbox('ativo', '1', false, ['class' => 'form-control']) }}
+            {{ Form::label('category', 'Categoria') }}
+            {{ Form::select('category_id', $categories, $article->categoryList($article->category_id), ['class' => 'form-control','placeholder' => 'Escolha a Categoria...']) }}
         </div>
+
         <div class="form-group">
-            {{ Form::submit($submitButton, ['class' => 'btn btn-primary form-control']) }}
+            {{ Form::label('title', 'Titulo') }}
+            {{ Form::text('title', $article->title, array('class' => 'form-control')) }}
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('description', 'Descrição') }}
+            {{ Form::textArea('description', $article->description, ['class' => 'form-control']) }}
+        </div>
+
+        <div class="form-group">
+            {{ Form::label('tags', 'Tags') }}
+            {{ Form::select('tags[]', $tags, $article->tag_list, ['id' => 'tags','class' => 'form-control','multiple'])}}
+        </div>
+
+        <div class="form-group">
+            {{ Form::submit('Atualizar', ['class' => 'btn btn-primary form-control']) }}
         </div>
 
         {!! Form::close() !!}
     </div>
 
+@endsection
+@section('footer')
+    <script>
+        $('#tags').select2({
+            placeholder: 'Escolha uma Tag',
+            tags: true
+
+        });
+    </script>
 @endsection

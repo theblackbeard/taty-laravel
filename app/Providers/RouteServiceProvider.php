@@ -4,6 +4,10 @@ namespace App\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use App\Article;
+use App\Tag;
+use App\Category;
+use App\Menu;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -28,8 +32,9 @@ class RouteServiceProvider extends ServiceProvider
 
         parent::boot($router);
         $router->model('menu', 'App\Menu');
-        $router->model('article', 'App\Article');
-    }
+        $router->model('category', 'App\Category');
+        $router->model('tag', 'App\Tag');
+        $router->model('article', 'App\Article');    }
 
     /**
      * Define the routes for the application.

@@ -1,16 +1,27 @@
 @extends('layouts.admin')
-@section('title', 'Page Title')
+@section('title', 'Artigos Adicionados')
 @section('content')
-<div id="content">
-    <h1>Artigos Cadastrados</h1>
-    <h2>by Tatiana</h2>
-</div>
-     <div id="a_messages">
-     
-     </div>
+
 <a href="/admin/article/new" class="btn btn-link a_link"><span class="glyphicon glyphicon-plus icon"></span>Criar Artigo</a>
 <div id="a_category">
-    
+    @if(count($articles)> 0)
+        <table class="table">
+            <tr>
+                <th>Titulo</th>
+                <th>Menu</th>
+                <th>Categoria</th>
+                <th>Ação</th>
+            </tr>
+            @foreach($articles as $article)
+                @include('admin.article.article')
+            @endforeach
+        </table>
+    @else
+        <h4 class="muted">
+            Sem Artigo -
+            <a href="/admin/article/new">Criar uma Artigo</a>
+        </h4>
+    @endif
 </div>
    
 @endsection

@@ -1,4 +1,5 @@
-@extends('layouts.main')
+@extends('layouts.home')
+@section('title', 'Entrar no Sistema')
 
 @section('content')
 <div class="container">

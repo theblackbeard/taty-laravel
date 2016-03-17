@@ -1,0 +1,587 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pho",
+				"photosDB"
+			],
+			[
+				"fi",
+				"filename"
+			],
+			[
+				"file",
+				"file_info"
+			],
+			[
+				"p",
+				"photos"
+			],
+			[
+				"mo",
+				"mouseover	.mouseover()"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mouse",
+				"mouseover	.mouseover()"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"newCover",
+				"newCoverTitle"
+			],
+			[
+				"va",
+				"value	Attr"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"alert",
+				"alert(message)	Window"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"cl",
+				"click	.click()"
+			],
+			[
+				"desc",
+				"description-Array"
+			],
+			[
+				"mou",
+				"mouseleave	.mouseleave()"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"b",
+				"black"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"aler",
+				"alert(message)	Window"
+			],
+			[
+				"fun",
+				"function with name"
+			],
+			[
+				"ale",
+				"alert(message)	Window"
+			],
+			[
+				"ani",
+				"animationend	Event"
+			],
+			[
+				"anima",
+				"animate	.animate()"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"bo",
+				"border"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Http/Controllers/ArticleController.php",
+			"settings":
+			{
+				"buffer_size": 4020,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Article.php",
+			"settings":
+			{
+				"buffer_size": 676,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/admin/article/new.blade.php",
+			"settings":
+			{
+				"buffer_size": 1704,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/migrations/2016_03_10_234310_create_articles_table.php",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"last_filter": "ntall",
+		"selected_items":
+		[
+			[
+				"ntall",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Developer/laravel/taty-laravel",
+		"/D/Developer/laravel/taty-laravel/app",
+		"/D/Developer/laravel/taty-laravel/app/Http/Controllers",
+		"/D/Developer/laravel/taty-laravel/app/Providers",
+		"/D/Developer/laravel/taty-laravel/resources",
+		"/D/Developer/laravel/taty-laravel/resources/views",
+		"/D/Developer/laravel/taty-laravel/resources/views/admin",
+		"/D/Developer/laravel/taty-laravel/resources/views/admin/article",
+		"/D/Developer/laravel/taty-laravel/storage"
+	],
+	"file_history":
+	[
+		"/D/Developer/laravel/taty-laravel/app/Article.php",
+		"/D/Developer/laravel/taty-laravel/resources/views/admin/article/new.blade.php",
+		"/D/Developer/laravel/taty-laravel/database/migrations/2016_03_10_234310_create_articles_table.php",
+		"/D/Developer/laravel/taty-laravel/.env",
+		"/D/Mateus/NODE/tatyweb/public/js/custom/app.js",
+		"/D/Mateus/NODE/tatyweb/app/views/home/detail.html",
+		"/D/Mateus/NODE/tatyweb/app/controllers/articles.js",
+		"/D/Mateus/NODE/tatyweb/package.json",
+		"/D/Mateus/NODE/tatyweb/config/express.js",
+		"/D/Mateus/NODE/tatyweb/app/views/layouts/includes/foot.html",
+		"/D/Mateus/NODE/tatyweb/public/js/jquery.magnific-popup.min.js",
+		"/D/Mateus/NODE/tatyweb/app/views/layouts/includes/footer.html",
+		"/D/Mateus/NODE/tatyweb/app/views/layouts/includes/head.html",
+		"/D/Mateus/NODE/tatyweb/app/views/home/portfolio.html",
+		"/D/Mateus/NODE/tatyweb/public/css/custom/portfolio.css",
+		"/D/Mateus/NODE/tatyweb/jquery.txt",
+		"/D/Mateus/NODE/tatyweb/app/views/home/outros.html",
+		"/I/Dev/Node/tatyweb/app/views/home/detail.html",
+		"/I/Dev/Node/tatyweb/app/controllers/home.js",
+		"/I/Dev/Node/tatyweb/app/models/article.js",
+		"/I/Dev/Node/tatyweb/public/css/custom/portfolio.css",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/show.html",
+		"/I/Dev/Node/tatyweb/app/views/home/portfolio.html",
+		"/I/Dev/Node/tatyweb/config/routes.js",
+		"/I/Dev/Node/tatyweb/public/css/custom/responsive.css",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/form.html",
+		"/I/Dev/Node/tatyweb/app/controllers/articles.js",
+		"/I/Dev/Node/tatyweb/app/controllers/categories.js",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/article.html",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/cover.html",
+		"/I/Dev/Node/tatyweb/app/views/layouts/includes/header_admin.html",
+		"/I/Dev/Node/tatyweb/public/css/custom/style.css",
+		"/I/Dev/Node/tatyweb/app/views/layouts/includes/foot.html",
+		"/I/Dev/Node/tatyweb/public/js/custom/app.js",
+		"/I/Dev/Node/tatyweb/app/helpers/upload.js",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/newphoto.html",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/index.html",
+		"/I/Dev/Node/tatyweb/public/css/custom/admin.css",
+		"/I/Dev/Node/tatyweb/app/views/admin/articles/more.html",
+		"/I/Dev/Node/tatyweb/app/controllers/articlesDep.js",
+		"/D/Mateus/taty/app/views/admin/articles/photos.html",
+		"/D/Mateus/taty/app/controllers/articles.js",
+		"/D/Mateus/taty/app/models/article.js",
+		"/D/Mateus/taty/app/views/admin/articles/form.html",
+		"/D/Mateus/taty/config/routes.js",
+		"/D/Mateus/taty/app/controllers/menus.js",
+		"/D/Mateus/taty/app/models/menu.js",
+		"/D/Mateus/taty/app/models/user.js",
+		"/D/Mateus/taty/app/views/admin/articles/cover.html",
+		"/D/Mateus/taty/public/css/custom/admin.css",
+		"/D/Mateus/taty/app/models/articleDep.js",
+		"/D/Mateus/taty/app/views/admin/articles/index.html",
+		"/D/Mateus/taty/app/views/admin/articles/article.html",
+		"/D/Mateus/taty/app/controllers/articlesOld.js",
+		"/D/Mateus/taty/app/views/admin/articles/show.html",
+		"/D/Mateus/taty/config/express.js",
+		"/D/Mateus/taty/app/views/admin/categories/form.html",
+		"/D/Mateus/taty/app/controllers/categories.js",
+		"/D/Mateus/taty/app/models/category.js",
+		"/D/Mateus/taty/app/views/admin/menus/form.html",
+		"/D/Mateus/taty/app/views/admin/menus/index.html",
+		"/D/Mateus/taty/app/views/admin/categories/index.html",
+		"/D/Mateus/taty/app/views/admin/categories/category.html",
+		"/D/Mateus/taty/app/models/categoryOld.js",
+		"/D/Mateus/taty/public/js/custom/app.js",
+		"/D/Mateus/taty/app/views/admin/menus/edit.html",
+		"/D/Mateus/taty/app/views/admin/menus/menu.html",
+		"/D/Mateus/taty/app/views/home/perfil.html",
+		"/D/Mateus/taty/app/views/home/contato.html",
+		"/I/Dev/Node/taty/app/views/home/index.html",
+		"/I/Dev/Node/taty/app/controllers/home.js",
+		"/I/Dev/Node/taty/config/routes.js",
+		"/I/Dev/Node/taty/app/views/layouts/includes/header.html",
+		"/I/Dev/Node/taty/public/js/custom/app.js",
+		"/I/Dev/Node/taty/public/css/custom/portfolio.css",
+		"/I/Dev/Node/taty/public/css/custom/responsive.css",
+		"/I/Dev/Node/taty/app/views/home/portfolio.html",
+		"/I/Dev/Node/taty/app/views/layouts/includes/head.html",
+		"/I/Dev/Node/taty/app/views/layouts/includes/footer.html",
+		"/I/Dev/Node/taty/app/views/layouts/includes/foot.html",
+		"/I/Dev/Node/taty/public/css/custom/style.css",
+		"/I/Dev/Node/taty/public/css/responsive.css",
+		"/I/Dev/Node/taty/public/css/style-min.css",
+		"/I/Dev/Node/taty/public/css/style.css",
+		"/I/Dev/Node/taty/public/js/app.js",
+		"/I/Dev/Node/taty/public/css/cover/cover.css",
+		"/I/Dev/Node/taty/app/views/home/gal",
+		"/I/Dev/Node/taty/Projeto Drag in Drop~",
+		"/I/Dev/Node/taty/taty"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"of",
+			"conte",
+			"of",
+			"\"of\"",
+			"of",
+			"Excluir",
+			"\n    ",
+			"category.js",
+			"*/\n",
+			"hover",
+			"col",
+			"/>\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Http/Controllers/ArticleController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1188,
+								1188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 791.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Article.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/admin/article/new.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								244,
+								244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "database/migrations/2016_03_10_234310_create_articles_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								625,
+								628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "taty.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 395.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

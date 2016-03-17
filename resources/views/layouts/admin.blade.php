@@ -30,7 +30,6 @@
     
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap-submenu.min.css') }}">
-    <link href="{{ asset('/css/jquery.tagsinput.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/magnific-popup.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/css/animate.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/custom/style.css') }}">
@@ -42,7 +41,7 @@
     <link rel="stylesheet" href="{{ asset('/css/custom/admin.css') }}">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/select2.min.css') }}" />
 </head>
 
 <!--[if lt IE 9]>
@@ -61,7 +60,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/admin">
+          <a class="navbar-brand" href="admin">
             <header id="topo">
             <h1>Tatiana S. Santana</h1>
             <h2>Administrativo</h2>
@@ -80,21 +79,41 @@
                      <li class="dropdown-submenu">
                           <a tabindex="0">Menu</a>
                           <ul class="dropdown-menu">
-                              <li><a tabindex="0" href="/admin/menus/new">Adicionar Menu</a></li>
-                              <li><a tabindex="0" href="/admin/menus">Listar Menu</a></li>
+                              <li><a tabindex="0" href="/admin/menu/new">Adicionar Menu</a></li>
+                              <li><a tabindex="0" href="/admin/menu">Listar Menus</a></li>
                           </ul>
                      </li>
                      <li class="dropdown-submenu">
                           <a tabindex="0">Categorias</a>
                           <ul class="dropdown-menu">
-                              <li><a tabindex="0" href="/admin/categories/new">Adicionar Categoria</a></li>
-                              <li><a tabindex="0" href="/admin/categories">Listar Categoria</a></li>
+                              <li><a tabindex="0" href="/admin/category/new">Adicionar Categoria</a></li>
+                              <li><a tabindex="0" href="/admin/category">Listar Categorias</a></li>
                           </ul>
                      </li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="0">Tag</a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="0" href="/admin/tag/new">Adicionar Tag</a></li>
+                            <li><a tabindex="0" href="/admin/tag">Listar Tags</a></li>
+                        </ul>
+                    </li>
                      
                 </ul>
             </li>
-            <li class="menuEffect"><a href="/admin/articles">Portfólio</a></li>
+              <li class="menuEffect dropdown">
+                  <a tabindex="0" href="#" data-toggle="dropdown" data-submenu>
+                      Postagem <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                          <a tabindex="0">Artigo</a>
+                          <ul class="dropdown-menu">
+                              <li><a tabindex="0" href="/admin/article/new">Adicionar Artigo</a></li>
+                              <li><a tabindex="0" href="/admin/article">Listar Artigo</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
             <li class="menuEffect"><a href="/admin/about">Perfil</a></li>
             <li class="menuEffect dropdown">
                 <a tabindex="0" href="#" data-toggle="dropdown" data-submenu>
@@ -104,7 +123,7 @@
                      <li class="dropdown-submenu">
                           <a tabindex="0">Usuarios</a>
                           <ul class="dropdown-menu">
-                              <li><a tabindex="0" href="/admin/users/signup">Adicionar Usuario</a></li>
+                              <li><a tabindex="0" href="/admin/user/register">Adicionar Usuario</a></li>
                           </ul>
                      </li>
                      <li>
@@ -120,6 +139,13 @@
       </div>
     </nav>
     <div class="container">
+        <div id="content">
+            <h1>@yield('title')</h1>
+            <h2>by Tatiana</h2>
+        </div>
+        <div id="a_messages">
+            @include('flash::message')
+        </div>
         @yield('content')
     </div>
     <footer>
@@ -128,7 +154,6 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('/js/bootstrap-submenu.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('/js/custom/jquery.tagsinput.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('/js/wow.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('/js/jquery.magnific-popup.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('/js/custom/app.js') }}" type="text/javascript"></script>
@@ -136,6 +161,8 @@
      new WOW().init();
      $('[data-submenu]').submenupicker();
     </script>
+    <script src="{{ asset('/js/select2.full.min.js') }}"></script>
     <script src="{{ asset('/js/custom/effects.js') }}" type="text/javascript"></script>
+    @yield('footer')
 </body>
 </html>

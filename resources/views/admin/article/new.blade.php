@@ -1,19 +1,11 @@
 @extends('layouts.admin')
 @section('title', 'Novo Artigo')
 @section('content')
-    <div id="content">
-        <h1>Novo Artigo</h1>
-        <h2>by Tatiana</h2>
-    </div>
-    <div id="a_messages">
-        @include('admin.errors.errors')
-    </div>
-
-    <div id="a_category">
-        {!! Form::open(array('url' => '/admin/article', 'class' => 'form', 'files' => true)) !!}
+       <div id="a_category">
+        {!! Form::open(array('url' => '/admin/article', 'files' => true)) !!}
         <div class="form-group">
             {{ Form::label('photo', 'Foto(s)') }}
-            {{ Form::file('url[]',  array('multiple'=>true)) }}
+            {{ Form::file('cover') }}
         </div>
         <div class="form-group">
             {{ Form::label('menu', 'Menu') }}
@@ -33,7 +25,7 @@
         </div>
         <div class="form-group">
             {{ Form::label('tags', 'Tags') }}
-            {{ Form::select('tags[]', $tags, null, ['class' => 'form-control','multiple'])}}
+            {{ Form::select('tags[]', $tags, null, ['id' => 'tags', 'class' => 'form-control','multiple'])}}
         </div>
 
 
@@ -44,4 +36,10 @@
         {!! Form::close() !!}
     </div>
 
+@endsection
+
+@section('footer')
+    <script>
+        $('#tags').select2();
+    </script>
 @endsection

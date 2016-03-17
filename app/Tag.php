@@ -8,7 +8,12 @@ class Tag extends Model
 {
     protected $fillable = ['title', 'name'];
 
-    public function articles(){
-        return $this->belongsToMany('App\Article');
+    public function allArticlesbyTag(){
+        return $this->belongsToMany('App\Article')->withTimestamps();
     }
+
+    public static function getCatbyName($string){
+        return Tag::where('name',$string);
+    }
+
 }

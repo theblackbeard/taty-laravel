@@ -118,7 +118,10 @@ a:active {
     padding: 10px;
 }
 
-
+.pags{
+    text-align: center;
+    margin-top: 50px;
+}
 
 /*RODAPE*/
 footer{
@@ -194,3 +197,45 @@ a.carv{
 .login{
     margin-top: 10%;
 }
+
+.pagination li a {
+     border-radius: 50% !important;margin: 0 6px;
+     border: 1px solid rgb(210,201,191);
+    color: #0b0b0b;
+    font-weight: bold;
+ }
+
+.pagination li.active span {
+    border-radius: 50% !important;margin: 0 6px;
+    background: rgb(210,201,191);
+    color: #0b0b0b;
+    font-weight: bold;
+    border: 1px solid rgb(210,201,191);
+}
+
+.pagination li.active:hover span {
+    background: rgb(255,255,255);
+    color: #0b0b0b;
+    font-weight: bold;
+    border: 1px solid rgb(210,201,191);
+}
+
+.pagination li.disabled span{
+    border-radius: 50% !important;margin: 0 6px;
+}
+
+.link_footer{
+    border: 0px whitesmoke solid;
+    text-align: center;
+    font-size: 15px;
+}
+
+a.carv{
+    color: whitesmoke;
+    font-style: italic;
+}
+
+a:hover.carv{
+    text-decoration:none;
+}
+

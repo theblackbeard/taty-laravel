@@ -10,6 +10,13 @@ use App\Menu;
 
 class MenuController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['menu']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -45,6 +52,7 @@ class MenuController extends Controller
         endif;
         $data['name'] = str_slug($data['title']);
         Menu::create($data);
+        flash()->success('Menu Criado com Sucesso!');
         return redirect('admin/menu');
     }
 
@@ -86,6 +94,7 @@ class MenuController extends Controller
         endif;
         $data['name'] = str_slug($data['title']);
         Menu::find($id)->update($data);
+        flash()->success('Menu Atualizado com Sucesso!');
         return redirect('admin/menu');
     }
 
@@ -98,6 +107,7 @@ class MenuController extends Controller
     public function destroy($id)
     {
         Menu::find($id)->delete();
+        flash()->success('Menu Deletado com Sucesso!');
         return redirect('admin/menu');
     }
 }
