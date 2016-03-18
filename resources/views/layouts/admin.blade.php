@@ -149,7 +149,14 @@
         @yield('content')
     </div>
     <footer>
-    	<h1>Made by <a href="#" target="_blank" class='carv'>Carvalhos</a>| <a href="/admin" class="carv">Administrador</a></h1>
+        <div class="link_footer">Made by <a href="#" target="_blank" class='carv'>Carvalhos</a>&nbsp;|
+            @if (Auth::guest())
+                &nbsp;<a href="/admin" class="carv">Administrador</a></h1>
+            @else
+                &nbsp;<a href="/admin" class="carv">{{ Auth::user()->name }}</a>&nbsp;|&nbsp;<a href="{{ url('/logout') }}" class="carv">Sair</a>
+            @endif
+        </div>
+
     </footer>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>

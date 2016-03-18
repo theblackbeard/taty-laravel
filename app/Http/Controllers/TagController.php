@@ -62,7 +62,7 @@ class TagController extends Controller
 
         $tag = Tag::getCatbyName($name)->get()->first();
         $articles = Article::Active()->paginate(30);
-        if(is_null($articles)):
+        if(is_null($tag)):
             abort(404);
         endif;
         return view('front.tag', compact('articles', 'tag'));

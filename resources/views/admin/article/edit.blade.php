@@ -10,12 +10,12 @@
         <div class="form-group">
 
             {{ Form::label('menu', 'Menu') }}
-            {{ Form::select('menu_id', $menus, $article->menuList($article->menu_id), ['class' => 'form-control','placeholder' => 'Escolha o Menu...']) }}
+            {{ Form::select('menu_id', $menus, $article->menuList($article->menu_id), ['id'=> 'menu_id','class' => 'form-control','placeholder' => 'Escolha o Menu...']) }}
         </div>
 
         <div class="form-group">
             {{ Form::label('category', 'Categoria') }}
-            {{ Form::select('category_id', $categories, $article->categoryList($article->category_id), ['class' => 'form-control','placeholder' => 'Escolha a Categoria...']) }}
+            {{ Form::select('category_id', $categories, $article->categoryList($article->category_id), ['id'=> 'category_id','class' => 'form-control','placeholder' => 'Escolha a Categoria...']) }}
         </div>
 
         <div class="form-group">
@@ -44,7 +44,17 @@
 @section('footer')
     <script>
         $('#tags').select2({
-            placeholder: 'Escolha uma Tag',
+            placeholder: 'Escolha Uma ou Mais Tags',
+            tags: true
+
+        });
+        $('#menu_id').select2({
+            placeholder: 'Escolha Um Menu',
+            tags: true
+
+        });
+        $('#category_id').select2({
+            placeholder: 'Escolha uma Categoria',
             tags: true
 
         });

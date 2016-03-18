@@ -98,7 +98,7 @@
         @if (Auth::guest())
             &nbsp;<a href="/admin" class="carv">Administrador</a></h1>
         @else
-            &nbsp;{{ Auth::user()->name }}&nbsp;|&nbsp;<a href="{{ url('/logout') }}" class="carv">Sair</a>
+            &nbsp;<a href="/admin" class="carv">{{ Auth::user()->name }}</a>&nbsp;|&nbsp;<a href="{{ url('/logout') }}" class="carv">Sair</a>
         @endif
         </div>
 

@@ -16,6 +16,7 @@ use App\Menu;
 use App\Category;
 use App\Photo;
 use App\User;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
@@ -57,7 +58,6 @@ class ArticleController extends Controller
      */
     public function store(ArticleRequest $request)
     {
-
 
         $user = Auth::user();
         $photos = Input::file('cover');
@@ -145,11 +145,11 @@ class ArticleController extends Controller
         $photos = $article->getPhoto($article->id);
         if(!empty($photos)):
             $allPhotos = array_merge($photos, [$article->cover]);
-            $this->remove_files($allPhotos);
+           $this->remove_files($allPhotos);
             $photosDel = $article->getPhotosArticleId($article->id);
             foreach($photosDel as $p){
                 $p->delete();
-            }
+            };
         else:
             $allPhotos = array_merge([$article->cover]);
             $this->remove_files($allPhotos);
@@ -261,6 +261,9 @@ class ArticleController extends Controller
 
     public function detail($name){
         $article = Article::findByString($name);
+        if(is_null($article)):
+            abort(404);
+        endif;
         $article->addViews($article->id);
         return view('front.detail', compact('article'));
     }
